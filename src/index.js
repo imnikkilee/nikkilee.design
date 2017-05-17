@@ -10,9 +10,11 @@ import {
 // Routes
 import About from './routes/About';
 import App from './App';
+import Beatport from './routes/Beatport';
 import Bionic from './routes/Bionic';
 import Jukely from './routes/Jukely';
 import Portfolio from './routes/Portfolio';
+import TheGroundwork from './routes/TheGroundwork';
 
 import './styles/index.scss';
 
@@ -24,6 +26,8 @@ ReactDOM.render((
       <Route path='/portfolio' component={Portfolio} />
       <Route path='/portfolio/bionic' component={Bionic} />
       <Route path='/portfolio/jukely' component={Jukely} />
+      <Route path='/portfolio/beatport' component={Beatport} />
+      <Route path='/portfolio/thegroundwork' component={TheGroundwork} />
       {
         //<Route path='*' component={ErrorPage} />
       }

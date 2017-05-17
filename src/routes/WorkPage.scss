@@ -17,6 +17,20 @@
     }
   }
 
+  &.BP {
+    h4,
+    h5 {
+      color: $colorFour;
+    }
+  }
+
+  &.GW {
+    h4,
+    h5 {
+      color: $colorTwo;
+    }
+  }
+
   header {
     padding: $spacePx * 4 0 $spacePx * 2;
     text-align: center;
