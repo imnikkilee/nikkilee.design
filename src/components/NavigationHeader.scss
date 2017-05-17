@@ -1,0 +1,34 @@
+@import '../styles/utils.scss';
+@import '../styles/variables.scss';
+
+.NavigationHeader {
+  background: $colorBlack;
+  color: $colorWhite;
+  padding: $spacePx * 4 0 $spacePx * 2;
+  text-align: center;
+
+  @include respond-to(medium-screen) {
+    padding: $spacePx * 8 0 $spacePx * 6;
+  }
+
+  a {
+    color: $colorWhite;
+
+    &:hover {
+      color: $colorFour;
+    }
+  }
+
+  .strike-one,
+  .strike-two {
+    text-decoration: line-through;
+  }
+
+  .strike-one {
+    color: $colorTwo;
+  }
+
+  .strike-two {
+    color: $colorOne;
+  }
+}

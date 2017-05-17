@@ -1,0 +1,48 @@
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  $columnGutter: $spacePx * 2;
+
+  [class^="col"] {
+    margin: 0 auto $spacePx * 3;
+    width: columns(12, 12);
+    text-align: left;
+  }
+
+  @include respond-to(medium-screen) {
+    [class*="_12-12"] {
+      width: calc(#{columns(12, 12)} - #{$columnGutter})
+    }
+
+    [class*="_10-12"] {
+      width: calc(#{columns(10, 12)} - #{$columnGutter})
+    }
+
+    [class*="_8-12"] {
+      width: calc(#{columns(8, 12)} - #{$columnGutter})
+    }
+
+    [class*="_5-12"] {
+      width: calc(#{columns(5, 12)} - #{$columnGutter})
+    }
+
+    [class*="_1-2"] {
+      width: calc(#{columns(6, 12)} - #{$columnGutter});
+    }
+
+    [class*="_1-3"] {
+      width: calc(#{columns(4, 12)} - #{$columnGutter})
+    }
+
+    [class*="_2-3"] {
+      width: calc(#{columns(8, 12)} - #{$columnGutter})
+    }
+  }
+}

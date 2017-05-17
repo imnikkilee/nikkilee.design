@@ -1,0 +1,115 @@
+h1 {
+  font-size: px-to-rem(40);
+  font-family: $fontSans;
+  font-weight: 900;
+  line-height: 1.25;
+  margin: 0;
+
+  @include respond-to(medium-screen) {
+    font-size: px-to-rem(60);
+  }
+}
+
+h2 {
+  font-size: px-to-rem(32);
+  font-family: $fontSans;
+  font-weight: 900;
+  line-height: 1.25;
+  margin: 0;
+
+  @include respond-to(medium-screen) {
+    font-size: px-to-rem(40);
+  }
+}
+
+h3 {
+  font-size: px-to-rem(24);
+  font-family: $fontSans;
+  font-weight: 900;
+  margin: 0;
+
+  @include respond-to(medium-screen) {
+    font-size: px-to-rem(28);
+  }
+}
+
+h4 {
+  font-size: px-to-rem(18);
+  font-family: $fontSans;
+  font-weight: 900;
+  margin: 0;
+
+  @include respond-to(medium-screen) {
+    font-size: px-to-rem(20);
+  }
+}
+
+h5 {
+  font-size: px-to-rem(12);
+  font-family: $fontSans;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include respond-to(medium-screen) {
+    font-size: px-to-rem(13);
+  }
+}
+
+h6 {
+  color: $colorGray;
+  font-size: px-to-rem(14);
+  font-family: $fontSans;
+  font-weight: 900;
+  margin: 0 0 3px;
+
+  @include respond-to(medium-screen) {
+    font-size: px-to-rem(15);
+  }
+}
+
+p {
+  font-size: px-to-rem(18);
+  font-family: $fontSans;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0 0 $spacePx 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+small {
+  display: block;
+  font-size: px-to-rem(15);
+  font-family: $fontSans;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: $spacePx;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  font-size: px-to-rem(19);
+  font-family: $fontSerif;
+  line-height: 1.5;
+  margin: 0 0 $spacePx 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+a {
+  color: $colorBlack;
+  @include transition;
+
+  &:hover {
+    color: $colorFour;
+  }
+}

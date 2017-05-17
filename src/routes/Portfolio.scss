@@ -1,0 +1,65 @@
+@import '../styles/utils.scss';
+@import '../styles/variables.scss';
+
+.Portfolio {
+  .webStuffContainer,
+  .otherStuffContainer {
+    text-align: center;
+
+    h2 {
+      margin: 0 0 $spacePx * 3 0;
+    }
+  }
+
+  .webStuffContainer {
+    padding: $spacePx * 2 0;
+
+    @include respond-to(medium-screen) {
+      padding: $spacePx * 4 0;
+    }
+  }
+
+  .otherStuffContainer {
+    padding: 0 0 $spacePx * 2 0;
+
+    @include respond-to(medium-screen) {
+      padding: 0 0 $spacePx * 4 0;
+    }
+  }
+
+  .webStuffThumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .webStuffThumb {
+    margin: 0 0 $spacePx * 3 0;
+
+    @include respond-to(medium-screen) {
+      width: calc(50% - (#{$spacePx} * 1.5);
+    }
+
+    &.gw {
+      color: $colorTwo;
+    }
+
+    &.jukely {
+      color: $colorThree;
+    }
+
+    &.bp {
+      color: $colorFour;
+    }
+
+    &.bionic {
+      color: $colorOne;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

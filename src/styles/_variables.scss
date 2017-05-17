@@ -1,0 +1,27 @@
+// Colors
+$colorBlack: #000;
+$colorWhite: #fff;
+$colorGray: rgba($colorBlack, .5);
+$colorFaintGray: rgba($colorBlack, .15);
+
+$colorOne: #FC4237;
+$colorTwo: #2979FF;
+$colorThree: #AA45E6;
+$colorFour: #8FC31C;
+
+$colorPrimary: #EC2E2E;
+$colorSecondary: #84807A;
+$colorAccent: #F7F3EE;
+$colorSecondAccent: #ECE8E3;
+$colorError: #EC2E2E;
+
+// Fonts
+$fontSans: 'Nunito Sans', sans-serif;
+$fontSerif: serif;
+
+// Space Units
+$space: 16;
+$spacePx: 16px;
+
+// Border Radius
+$borderRadius: 4px;

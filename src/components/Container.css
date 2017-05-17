@@ -1,0 +1,17 @@
+.Container.fullWidth {
+  display: flex;
+  justify-content: center; }
+
+.Container.maxWidth {
+  max-width: 1250px;
+  padding: 0 16px;
+  width: 100%; }
+  @media screen and (min-width: 550px) {
+    .Container.maxWidth {
+      padding: 0 32px; } }
+  @media screen and (min-width: 750px) {
+    .Container.maxWidth {
+      padding: 0 6.25%; } }
+  @media screen and (min-width: 900px) {
+    .Container.maxWidth {
+      padding: 0 4.16667%; } }

@@ -1,0 +1,85 @@
+@import '../styles/variables.scss';
+
+// px-to
+// @param {Int} px
+// @param {String} unit
+// Helper function for px-to-em and px-to-rem functions.
+@function px-to($px, $unit) {
+  @return ($px / 16) + $unit;
+}
+
+// px-to-rem
+// @param {Int} px
+//
+// For the given pixel value, return the rem value at a base-16 root font size.
+//
+// Example usage in SCSS:
+//   font-size: px-to-rem(24)
+//
+// Example output in CSS:
+//   font-size: 2.4rem
+//
+@function px-to-rem($px) {
+  @return px-to($px, rem);
+}
+
+// Media Queries
+@mixin respond-to($media) {
+  @if $media == small-screen {
+    @media screen and (min-width: 550px) { @content;}
+  } @else if $media == medium-screen {
+    @media screen and (min-width: 750px) { @content;}
+  } @else if $media == large-screen {
+    @media screen and (min-width: 900px) { @content;}
+  }
+}
+
+// Columns
+@function columns($cols, $totalCols) {
+  @return (100% / $totalCols) * $cols;
+}
+
+// Buttons
+@mixin buttonBase($color) {
+  border: 2px solid rgba($color, 0);
+  border-radius: $borderRadius;
+  cursor: pointer;
+  line-height: 1;
+  background: $color;
+  font-weight: 700;
+  font-family: $fontSans;
+  text-decoration: none;
+  color: #fff;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background: darken($color, 8%);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: darken($color, 8%);
+  }
+
+  &:active {
+    outline: none;
+    transform: scale(0.97);
+  }
+
+}
+
+@mixin button($color) {
+  @include buttonBase($color);
+  padding: $spacePx*.75 $spacePx*2 $spacePx;
+  font-size: px-to-rem(18);
+}
+
+@mixin smallButton($color) {
+  @include buttonBase($color);
+  padding: $spacePx/2-3 $spacePx $spacePx/2;
+  font-size: px-to-rem(16);
+}
+
+@mixin transition {
+  transition: all ease .25s;
+}
