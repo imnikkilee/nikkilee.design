@@ -1,3 +1,4 @@
+@import '../styles/utils.scss';
 @import '../styles/variables.scss';
 
 .WorkPage {
@@ -9,16 +10,52 @@
     }
   }
 
-  .headerContainer {
-    text-align: center;
+  &.Jukely {
+    h4,
+    h5 {
+      color: $colorThree;
+    }
   }
 
-  img.outline {
-    border: 1px solid $colorFaintGray;
+  header {
+    padding: $spacePx * 4 0 $spacePx * 2;
+    text-align: center;
+
+    @include respond-to(medium-screen) {
+      padding: $spacePx * 6 0 $spacePx * 3;
+    }
+  }
+
+  h1 {
+    margin: $spacePx * .5 0;
+  }
+
+  .row.showcase {
+    margin-bottom: $spacePx * 2;
+    @include respond-to(medium-screen) {
+      margin-bottom: $spacePx * 3
+    }
+  }
+
+  .row.intro {
+    margin-bottom: $spacePx * 2;
+
+    @include respond-to(medium-screen) {
+      margin-bottom: $spacePx * 4;
+    }
+  }
+
+  img {
+    max-width: 100%;
+
+    &.outline {
+      border: 1px solid $colorFaintGray;
+    }
   }
 
   small {
     margin: $spacePx * .75 auto 0;
     max-width: 600px;
+    width: 100%;
   }
 }

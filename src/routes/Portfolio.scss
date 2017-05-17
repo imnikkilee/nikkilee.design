@@ -35,7 +35,9 @@
   }
 
   .webStuffThumb {
+    display: block;
     margin: 0 0 $spacePx * 3 0;
+    text-decoration: none;
 
     @include respond-to(medium-screen) {
       width: calc(50% - (#{$spacePx} * 1.5);
@@ -60,6 +62,10 @@
     img {
       width: 100%;
       height: auto;
+    }
+
+    h3 {
+      margin: $spacePx * .5 0 0 0;
     }
   }
 }

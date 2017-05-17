@@ -11,6 +11,7 @@ import {
 import About from './routes/About';
 import App from './App';
 import Bionic from './routes/Bionic';
+import Jukely from './routes/Jukely';
 import Portfolio from './routes/Portfolio';
 
 import './styles/index.scss';
@@ -22,6 +23,7 @@ ReactDOM.render((
       <Route path='/about' component={About} />
       <Route path='/portfolio' component={Portfolio} />
       <Route path='/portfolio/bionic' component={Bionic} />
+      <Route path='/portfolio/jukely' component={Jukely} />
       {
         //<Route path='*' component={ErrorPage} />
       }

@@ -59,13 +59,14 @@ h5 {
 
 h6 {
   color: $colorGray;
-  font-size: px-to-rem(14);
+  font-size: px-to-rem(12);
   font-family: $fontSans;
   font-weight: 900;
+  letter-spacing: .05rem;
   margin: 0 0 3px;
 
   @include respond-to(medium-screen) {
-    font-size: px-to-rem(15);
+    font-size: px-to-rem(13);
   }
 }
 
@@ -112,4 +113,8 @@ a {
   &:hover {
     color: $colorFour;
   }
+}
+
+strong {
+  font-weight: 900;
 }

@@ -1,0 +1,45 @@
+@import '../styles/utils.scss';
+@import '../styles/variables.scss';
+
+.NavigationSimple {
+  padding: $spacePx 0 0 0;
+  position: fixed;
+  width: 100%;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 1;
+  }
+
+  .logoLink {
+    font-size: px-to-rem(18);
+    font-family: $fontSans;
+    font-weight: 900;
+    text-decoration: none;
+
+    @include respond-to(medium-screen) {
+      font-size: px-to-rem(28);
+    }
+  }
+
+  .otherLinks {
+    font-size: px-to-rem(18);
+    font-family: $fontSans;
+    font-weight: 900;
+    margin: 0;
+
+    @include respond-to(medium-screen) {
+      font-size: px-to-rem(20);
+    }
+
+    a {
+      margin: 0 0 0 $spacePx * .5;
+
+      @include respond-to(medium-screen) {
+        margin: 0 0 0 $spacePx;
+      }
+    }
+  }
+}

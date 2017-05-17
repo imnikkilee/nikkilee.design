@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 // Components
+import {Link} from 'react-router';
 import Container from '../components/Container';
 import NavigationHeader from '../components/NavigationHeader';
 
@@ -24,22 +25,22 @@ class Portfolio extends Component {
               web stuff
             </h2>
             <div className='webStuffThumbs'>
-              <div className='webStuffThumb gw'>
+              <Link to='/portfolio/thegroundwork' className='webStuffThumb gw'>
                 <img src={ThumbGW} />
                 <h3>The Groundwork</h3>
-              </div>
-              <div className='webStuffThumb jukely'>
+              </Link>
+              <Link to='/portfolio/jukely' className='webStuffThumb jukely'>
                 <img src={ThumbJukely} />
                 <h3>Jukely</h3>
-              </div>
-              <div className='webStuffThumb bp'>
+              </Link>
+              <Link to='/portfolio/beatport' className='webStuffThumb bp'>
                 <img src={ThumbBP} />
                 <h3>Beatport Pro</h3>
-              </div>
-              <div className='webStuffThumb bionic'>
+              </Link>
+              <Link to='/portfolio/bionic' className='webStuffThumb bionic'>
                 <img src={ThumbBionic} />
                 <h3>Bionic</h3>
-              </div>
+              </Link>
             </div>
           </Container>
         </Container>
