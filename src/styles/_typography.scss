@@ -1,7 +1,7 @@
 h1 {
   font-size: px-to-rem(40);
   font-family: $fontSans;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.25;
   margin: 0;
 
@@ -13,7 +13,7 @@ h1 {
 h2 {
   font-size: px-to-rem(32);
   font-family: $fontSans;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.25;
   margin: 0;
 
@@ -25,7 +25,7 @@ h2 {
 h3 {
   font-size: px-to-rem(24);
   font-family: $fontSans;
-  font-weight: 900;
+  font-weight: 800;
   margin: 0;
 
   @include respond-to(medium-screen) {
@@ -34,36 +34,35 @@ h3 {
 }
 
 h4 {
-  font-size: px-to-rem(18);
+  font-size: px-to-rem(14);
   font-family: $fontSans;
-  font-weight: 900;
+  font-weight: 800;
   margin: 0;
 
   @include respond-to(medium-screen) {
-    font-size: px-to-rem(20);
+    font-size: px-to-rem(16);
   }
 }
 
 h5 {
-  font-size: px-to-rem(12);
+  font-size: px-to-rem(11);
   font-family: $fontSans;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 1px;
   margin: 0;
   text-transform: uppercase;
 
   @include respond-to(medium-screen) {
-    font-size: px-to-rem(13);
+    font-size: px-to-rem(12);
   }
 }
 
 h6 {
-  color: $colorGray;
   font-size: px-to-rem(12);
   font-family: $fontSans;
-  font-weight: 900;
-  letter-spacing: .05rem;
-  margin: 0 0 3px;
+  font-weight: 700;
+  margin: 0;
+  color: $colorGray;
 
   @include respond-to(medium-screen) {
     font-size: px-to-rem(13);
@@ -111,7 +110,7 @@ a {
   @include transition;
 
   &:hover {
-    color: $colorFour;
+    color: $colorLink;
   }
 }
 

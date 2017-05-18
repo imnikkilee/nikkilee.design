@@ -1,4 +1,4 @@
-$columnGutter: $spacePx * 2;
+$columnGutter: $spacePx * 1.5;
 
 .Grid {
 
@@ -17,11 +17,23 @@ $columnGutter: $spacePx * 2;
       align-items: flex-end;
     }
 
+    &.alignCenter {
+      align-items: center;
+    }
+
     &.halfMargin {
       margin-bottom: $spacePx;
 
       @include respond-to(medium-screen) {
         margin-bottom: $spacePx;
+      }
+    }
+
+    &.noMargin {
+      margin-bottom: 0;
+
+      @include respond-to(medium-screen) {
+        margin-bottom: 0;
       }
     }
   }

@@ -1,19 +1,14 @@
 // Colors
 $colorBlack: #000;
 $colorWhite: #fff;
-$colorGray: rgba($colorBlack, .5);
-$colorFaintGray: rgba($colorBlack, .15);
 
-$colorOne: #FC4237;
-$colorTwo: #2979FF;
-$colorThree: #AA45E6;
-$colorFour: #8FC31C;
+$colorPrimary: #189DFF;
+$colorSecondary: #FF8250;
+$colorAccent: #F5F0EA;
+$colorLink: #189DFF;
 
-$colorPrimary: #EC2E2E;
-$colorSecondary: #84807A;
-$colorAccent: #F7F3EE;
-$colorSecondAccent: #ECE8E3;
-$colorError: #EC2E2E;
+$colorGray: rgba($colorBlack, .4);
+$colorFaintGray: rgba($colorBlack, .1);
 
 // Fonts
 $fontSans: 'Nunito Sans', sans-serif;

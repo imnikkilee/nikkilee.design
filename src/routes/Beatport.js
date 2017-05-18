@@ -30,12 +30,12 @@ class Beatport extends Component {
     return (
       <div className='WorkPage BP'>
         <NavigationSimple/>
-        <Container size={'fullWidth'}>
+        <Container size={'fullWidth'} className='headerContainer'>
           <Container size={'maxWidth'}>
             <header>
-              <h5>
+              <h4>
                 nov 2013 &ndash; april 2015
-              </h5>
+              </h4>
               <h1>
                 Beatport Pro
               </h1>
@@ -43,6 +43,10 @@ class Beatport extends Component {
                 responsive web app design &amp; development
               </h4>
             </header>
+          </Container>
+        </Container>
+        <Container size={'fullWidth'} className='contentContainer'>
+          <Container size={'maxWidth'}>
             <div className='Grid'>
               <div className='row showcase'>
                 <div className="col_12-12">

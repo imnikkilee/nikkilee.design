@@ -20,25 +20,36 @@
     text-decoration: none;
 
     @include respond-to(medium-screen) {
-      font-size: px-to-rem(28);
+      font-size: px-to-rem(20);
+    }
+
+    &:hover {
+      color: $colorBlack;
+      text-decoration: underline;
     }
   }
 
   .otherLinks {
-    font-size: px-to-rem(18);
+    font-size: px-to-rem(14);
     font-family: $fontSans;
     font-weight: 900;
     margin: 0;
 
     @include respond-to(medium-screen) {
-      font-size: px-to-rem(20);
+      font-size: px-to-rem(16);
     }
 
     a {
       margin: 0 0 0 $spacePx * .5;
+      text-decoration: none;
 
       @include respond-to(medium-screen) {
         margin: 0 0 0 $spacePx;
+      }
+
+      &:hover {
+        color: $colorBlack;
+        text-decoration: underline;
       }
     }
   }

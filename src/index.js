@@ -12,7 +12,11 @@ import About from './routes/About';
 import App from './App';
 import Beatport from './routes/Beatport';
 import Bionic from './routes/Bionic';
+import HandLettering from './routes/HandLettering';
+import Illustrations from './routes/Illustrations';
 import Jukely from './routes/Jukely';
+import Misc from './routes/Misc';
+import PaperGoods from './routes/PaperGoods';
 import Portfolio from './routes/Portfolio';
 import TheGroundwork from './routes/TheGroundwork';
 
@@ -28,6 +32,10 @@ ReactDOM.render((
       <Route path='/portfolio/jukely' component={Jukely} />
       <Route path='/portfolio/beatport' component={Beatport} />
       <Route path='/portfolio/thegroundwork' component={TheGroundwork} />
+      <Route path='/portfolio/illustrations' component={Illustrations} />
+      <Route path='/portfolio/papergoods' component={PaperGoods} />
+      <Route path='/portfolio/handlettering' component={HandLettering} />
+      <Route path='/portfolio/misc' component={Misc} />
       {
         //<Route path='*' component={ErrorPage} />
       }

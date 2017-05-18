@@ -39,12 +39,12 @@ class Jukely extends Component {
     return (
       <div className='WorkPage Jukely'>
         <NavigationSimple/>
-        <Container size={'fullWidth'}>
+        <Container size={'fullWidth'} className='headerContainer'>
           <Container size={'maxWidth'}>
             <header>
-              <h5>
+              <h4>
                 april 2015 &ndash; april 2016
-              </h5>
+              </h4>
               <h1>
                 Jukely
               </h1>
@@ -52,6 +52,10 @@ class Jukely extends Component {
                 responsive web app design &amp; development
               </h4>
             </header>
+          </Container>
+        </Container>
+        <Container size={'fullWidth'} className='contentContainer'>
+          <Container size={'maxWidth'}>
             <div className='Grid'>
               <div className='row showcase'>
                 <div className="col_12-12">

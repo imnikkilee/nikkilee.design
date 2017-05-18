@@ -10,6 +10,10 @@ import ThumbGW from '../images/portfolio/thumb-gw.png';
 import ThumbJukely from '../images/portfolio/thumb-jukely.png';
 import ThumbBP from '../images/portfolio/thumb-bp.png';
 import ThumbBionic from '../images/portfolio/thumb-bionic.png';
+import ThumbIllustrations from '../images/portfolio/thumb-illustrations.png';
+import ThumbPaperGoods from '../images/portfolio/thumb-paper.jpg';
+import ThumbMisc from '../images/portfolio/thumb-misc.jpg';
+import ThumbLettering from '../images/portfolio/thumb-lettering.png';
 
 // Styles
 import './Portfolio.scss';
@@ -50,18 +54,22 @@ class Portfolio extends Component {
               other stuff
             </h2>
             <div className='otherStuffThumbs'>
-              <div className='otherStuffThumb'>
-                <h3>paper goods</h3>
-              </div>
-              <div className='otherStuffThumb'>
+              <Link to='/portfolio/illustrations' className='otherStuffThumb'>
+                <img src={ThumbIllustrations} />
                 <h3>illustrations</h3>
-              </div>
-              <div className='otherStuffThumb'>
+              </Link>
+              <Link to='/portfolio/papergoods' className='otherStuffThumb'>
+                <img src={ThumbPaperGoods} />
+                <h3>paper goods</h3>
+              </Link>
+              <Link to='/portfolio/handlettering' className='otherStuffThumb'>
+                <img src={ThumbLettering} />
                 <h3>hand-lettering</h3>
-              </div>
-              <div className='otherStuffThumb'>
+              </Link>
+              <Link to='/portfolio/misc' className='otherStuffThumb'>
+                <img src={ThumbMisc} />
                 <h3>misc.</h3>
-              </div>
+              </Link>
             </div>
           </Container>
         </Container>

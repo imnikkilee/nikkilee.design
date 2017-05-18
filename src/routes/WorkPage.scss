@@ -3,45 +3,35 @@
 
 .WorkPage {
 
-  &.Bionic {
-    h4,
-    h5 {
-      color: $colorOne;
+  .headerContainer {
+    background: $colorAccent;
+    padding: $spacePx * 4 0 $spacePx * 3.5;
+    text-align: center;
+
+    @include respond-to(medium-screen) {
+      padding: $spacePx * 6 0 $spacePx * 5.5;
+    }
+
+    h1 {
+      margin: $spacePx * .5 0 $spacePx;
     }
   }
 
-  &.Jukely {
-    h4,
-    h5 {
-      color: $colorThree;
-    }
-  }
-
-  &.BP {
-    h4,
-    h5 {
-      color: $colorFour;
-    }
-  }
-
-  &.GW {
-    h4,
-    h5 {
-      color: $colorTwo;
-    }
-  }
-
-  header {
+  .headerContainerAlt {
     padding: $spacePx * 4 0 $spacePx * 2;
     text-align: center;
 
     @include respond-to(medium-screen) {
-      padding: $spacePx * 6 0 $spacePx * 3;
+      padding: $spacePx * 6 0 $spacePx * 4;
     }
   }
 
-  h1 {
-    margin: $spacePx * .5 0;
+  .contentContainer {
+    margin-top: $spacePx * -2;
+
+    @include respond-to(medium-screen) {
+      margin-top: $spacePx * -3;
+    }
   }
 
   .row.showcase {
@@ -64,6 +54,11 @@
 
     &.outline {
       border: 1px solid $colorFaintGray;
+    }
+
+    &.padding {
+      box-sizing: border-box;
+      padding: $spacePx * 1.5;
     }
   }
 

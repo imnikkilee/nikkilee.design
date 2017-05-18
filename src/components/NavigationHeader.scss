@@ -2,8 +2,8 @@
 @import '../styles/variables.scss';
 
 .NavigationHeader {
-  background: $colorBlack;
-  color: $colorWhite;
+  background: $colorAccent;
+  color: $colorBlack;
   padding: $spacePx * 4 0 $spacePx * 2;
   text-align: center;
 
@@ -11,24 +11,27 @@
     padding: $spacePx * 8 0 $spacePx * 6;
   }
 
-  a {
-    color: $colorWhite;
+  .link-one {
+    color: $colorSecondary;
+    text-decoration: none;
 
     &:hover {
-      color: $colorFour;
+      text-decoration: underline;
+    }
+  }
+
+  .link-two {
+    color: $colorPrimary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 
   .strike-one,
   .strike-two {
     text-decoration: line-through;
-  }
-
-  .strike-one {
-    color: $colorTwo;
-  }
-
-  .strike-two {
-    color: $colorOne;
+    color: $colorGray;
   }
 }

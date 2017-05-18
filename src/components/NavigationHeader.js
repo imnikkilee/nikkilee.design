@@ -16,6 +16,7 @@ class NavigationHeader extends Component {
             <nav>
               <h1>
                 <Link
+                  className='link-one'
                   to='/about'>
                   nikki lee
                 </Link>
@@ -30,6 +31,7 @@ class NavigationHeader extends Component {
                 <br/>
                 human who likes to&nbsp;
                 <IndexLink
+                  className='link-two'
                   to='/'>
                   make stuff
                 </IndexLink>

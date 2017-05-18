@@ -19,12 +19,12 @@ class Bionic extends Component {
     return (
       <div className='WorkPage Bionic'>
         <NavigationSimple/>
-        <Container size={'fullWidth'}>
+        <Container size={'fullWidth'} className='headerContainer'>
           <Container size={'maxWidth'}>
             <header>
-              <h5>
+              <h4>
                 july 2013 &ndash; dec 2013
-              </h5>
+              </h4>
               <h1>
                 Bionic
               </h1>
@@ -32,6 +32,10 @@ class Bionic extends Component {
                 web app design &amp; development
               </h4>
             </header>
+          </Container>
+        </Container>
+        <Container size={'fullWidth'} className='contentContainer'>
+          <Container size={'maxWidth'}>
             <div className='Grid'>
               <div className='row showcase'>
                 <div className="col_12-12">
