@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 // Components
 import Container from '../components/Container';
 import NavigationSimple from '../components/NavigationSimple';
+import PortfolioNavigator from '../components/PortfolioNavigator';
 
 // Images
 import ImageShowcase from '../images/portfolio/jukely/showcase.png';
@@ -221,6 +222,7 @@ class Jukely extends Component {
             </div>
           </Container>
         </Container>
+        <PortfolioNavigator prevLink="thegroundwork" nextLink="beatport"/>
       </div>
     )
   }

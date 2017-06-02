@@ -1,0 +1,36 @@
+@import '../styles/variables.scss';
+@import '../styles/utils.scss';
+
+.PortfolioNavigator {
+  position: fixed;
+  bottom: $spacePx / 2;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  .innerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .arrowIcon {
+    height: 20px;
+    width: 20px;
+    fill: $colorBlack;
+    @include transition;
+
+    &:hover {
+      fill: $colorLink;
+    }
+  }
+
+  .nextLink,
+  .prevLink,
+  .topLink {
+    cursor: pointer;
+  }
+
+  .prevLink {
+    margin-right: $spacePx;
+  }
+}

@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 // Components
 import Container from '../components/Container';
 import NavigationSimple from '../components/NavigationSimple';
+import PortfolioNavigator from '../components/PortfolioNavigator';
 
 // Images
 import Wedding from '../images/portfolio/papergoods/wedding-invites.jpg';
@@ -63,6 +64,7 @@ class PaperGoods extends Component {
             </div>
           </Container>
         </Container>
+        <PortfolioNavigator prevLink="illustrations" nextLink="handlettering"/>
       </div>
     )
   }

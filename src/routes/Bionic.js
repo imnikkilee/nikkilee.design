@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 // Components
 import Container from '../components/Container';
 import NavigationSimple from '../components/NavigationSimple';
+import PortfolioNavigator from '../components/PortfolioNavigator';
 
 // Images
 import ImageShowcase from '../images/portfolio/bionic/showcase.png';
@@ -77,6 +78,7 @@ class Bionic extends Component {
             </div>
           </Container>
         </Container>
+        <PortfolioNavigator prevLink="beatport" nextLink="illustrations"/>
       </div>
     )
   }

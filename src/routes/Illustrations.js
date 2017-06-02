@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 // Components
 import Container from '../components/Container';
 import NavigationSimple from '../components/NavigationSimple';
+import PortfolioNavigator from '../components/PortfolioNavigator';
 
 // Images
 import PWL from '../images/portfolio/illustrations/pwl.jpg';
@@ -70,6 +71,7 @@ class Illustrations extends Component {
             </div>
           </Container>
         </Container>
+        <PortfolioNavigator prevLink="bionic" nextLink="papergoods"/>
       </div>
     )
   }
